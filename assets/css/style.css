@@ -15,6 +15,7 @@ canvas {
   font-family: "Fredoka One", cursive;
   font-size: 1,3rem:
   z-index: 2;
+}
 
 .container {
   height: 100vh;

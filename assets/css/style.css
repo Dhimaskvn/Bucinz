@@ -4,26 +4,6 @@ canvas {
   position: fixed;
   z-index: 1;
 }
-.clock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    font-size: 3rem;
-    text-align: center; /* Posisi teks ke tengah */
-}
-
-.hour, .minute, .second {
-    margin: 0 10px;
-}
-
-/* Media query untuk layar ponsel */
-@media only screen and (max-width: 600px) {
-    .clock {
-        font-size: 2rem; /* Mengurangi ukuran font untuk layar kecil */
-    }
-}
 .container {
   height: 100vh;
   display: flex;

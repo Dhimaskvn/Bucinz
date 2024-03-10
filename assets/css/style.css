@@ -5,35 +5,17 @@ canvas {
   z-index: 1;
 }
 .clock {
-  font-family: 'Fredoka One', cursive;
-  font-size: 2rem;
-  position: fixed;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
 }
 
-.clock span {
-  display: inline-block;
-  width: 1.5rem;  
-  text-align: center;
+.hour, .minute, .second {
+    margin: 0 10px;
 }
-
-.clock .hour {
-  background-color: inherit;
-  color: inherit;
-}
-
-.clock .minute {
-  background-color: inherit;
-  color: inherit;
-}
-
-.clock .second {
-  background-color: inherit;
-  color: inherit;
-}
-
 .container {
   height: 100vh;
   display: flex;

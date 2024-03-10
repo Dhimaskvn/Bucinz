@@ -12,7 +12,13 @@ canvas {
   text-align: center;
   z-index: 2;
 }
-    
+
+#clock {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  z-index: 2:
+}
+
 #greeting {
   font-family: "Fredoka One", cursive;
   font-size: 1.6rem;

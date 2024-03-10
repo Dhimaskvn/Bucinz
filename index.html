@@ -49,6 +49,7 @@
       <div class="container">
        <div class="text-container">
          <div class="clock" id="clock"></div>
+         <div class="date" id="date"></div>
           <h1 id="greeting"></h1>
           <h4 id="quotes"></h4>
           <em id="quotes-author" class="text-muted"></em>
@@ -106,7 +107,18 @@
     const second = now.getSeconds().toString().padStart(2, '0');
     const time = `${hour}:${minute}:${second}`;
 
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const day = dayNames[now.getDay()];
+
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const month = monthNames[now.getMonth()];
+
+    const year = now.getFullYear().toString();
+
+    const fullDate = `${day} ${month} ${year}`;
+
     document.getElementById('clock').textContent = time;
+    document.getElementById('date').textContent = fullDate;
 }
 
 // Panggil fungsi untuk pertama kali

@@ -47,9 +47,9 @@
     <div id="bg">  
     <div id="particles-js"></div>
       <div class="container">
-       <div class="text-container">
+        <div class="date" id="date"></div>
          <div class="clock" id="clock"></div>
-         <div class="date" id="date"></div>
+       <div class="text-container">
           <h1 id="greeting"></h1>
           <h4 id="quotes"></h4>
           <em id="quotes-author" class="text-muted"></em>
@@ -115,7 +115,7 @@
 
     const year = now.getFullYear().toString();
 
-    const fullDate = `${day} ${month} ${year}`;
+    const fullDate = `${day} ${now.getDate()} ${month} ${year}`;
 
     document.getElementById('clock').textContent = time;
     document.getElementById('date').textContent = fullDate;

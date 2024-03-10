@@ -4,6 +4,13 @@ canvas {
   position: fixed;
   z-index: 1;
 }
+
+.clock {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  z-index: 2:
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -11,12 +18,6 @@ canvas {
   justify-content: center;
   text-align: center;
   z-index: 2;
-}
-
-#clock {
-  font-family: "Fredoka One", cursive;
-  font-size: 2rem;
-  z-index: 2:
 }
 
 #greeting {

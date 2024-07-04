@@ -114,32 +114,32 @@
         textToWrite.push(text.replace("{greetings}", greetText).replace("{nicknames}", nickText));
       });
       
-    function updateTime() {
-    const now = new Date();
-    const hour = now.getHours().toString().padStart(2, '0');
-    const minute = now.getMinutes().toString().padStart(2, '0');
-    const second = now.getSeconds().toString().padStart(2, '0');
-    const time = `${hour}:${minute}:${second}`;
+function updateTime() {
+  const now = new Date();
+  const hour = now.getHours().toString().padStart(2, '0');
+  const minute = now.getMinutes().toString().padStart(2, '0');
+  const second = now.getSeconds().toString().padStart(2, '0');
+  const time = `${hour}:${minute}:${second}`;
 
-    const dayNames = ['Minggu,', 'Senin,', 'Selasa,', 'Rabu,', 'Kamis,', 'Jumat,', 'Sabtu,'];
-    const day = dayNames[now.getDay()];
+  const dayNames = ['Minggu,', 'Senin,', 'Selasa,', 'Rabu,', 'Kamis,', 'Jumat,', 'Sabtu,'];
+  const day = dayNames[now.getDay()];
 
-    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const month = monthNames[now.getMonth()];
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+  const month = monthNames[now.getMonth()];
 
-    const year = now.getFullYear().toString();
+  const year = now.getFullYear().toString();
 
-    const fullDate = `${day} ${now.getDate()} ${month} ${year}`;
+  const fullDate = `${day} ${now.getDate()} ${month} ${year}`;
 
-    document.getElementById('clock').textContent = time;
-    document.getElementById('date').textContent = fullDate;
+  document.getElementById('clock').textContent = time;
+  document.getElementById('date').textContent = fullDate;
 }
 
 // Panggil fungsi untuk pertama kali
 updateTime();
 // Perbarui setiap detik
 setInterval(updateTime, 1000);
-
+      
       $(document).ready(function () {
         $("#bg").addClass(getMode(getTime()));
         generateTypeIt("#greeting", 100, true, textToWrite);
